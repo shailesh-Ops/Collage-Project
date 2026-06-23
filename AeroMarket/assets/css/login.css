@@ -1,0 +1,753 @@
+/* ==========================
+   AeroMarket Login Page
+   ========================== */
+
+:root {
+
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+
+    --bg: #f8fafc;
+    --card-bg: rgba(255,255,255,0.85);
+
+    --text: #0f172a;
+    --text-light: #64748b;
+
+    --border: #cbd5e1;
+
+    --shadow:
+        0 20px 40px rgba(0,0,0,0.12);
+
+    --success: #10b981;
+
+    --glass:
+        rgba(255,255,255,0.15);
+
+}
+
+/* DARK THEME */
+
+body.dark {
+
+    --bg: #0f172a;
+
+    --card-bg: rgba(15,23,42,0.75);
+
+    --text: #f8fafc;
+
+    --text-light: #cbd5e1;
+
+    --border: rgba(255,255,255,0.12);
+
+    --shadow:
+        0 20px 40px rgba(0,0,0,0.45);
+
+}
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    min-height:100vh;
+
+    transition:.3s ease;
+
+}
+
+/* =====================
+   THEME SWITCH
+   ===================== */
+
+.theme-switch{
+
+
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    z-index: 999;    /* ← lower than card */
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    background:var(--card-bg);
+
+    backdrop-filter:blur(12px);
+
+    padding:12px 18px;
+
+    border-radius:50px;
+
+    border:1px solid var(--border);
+
+}
+
+.switch{
+
+    position:relative;
+
+    width:50px;
+    height:24px;
+
+}
+
+.switch input{
+    display:none;
+}
+
+.slider{
+
+    position:absolute;
+
+    inset:0;
+
+    cursor:pointer;
+
+    background:#ccc;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.slider::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:18px;
+    height:18px;
+
+    left:3px;
+    top:3px;
+
+    background:white;
+
+    border-radius:50%;
+
+    transition:.3s;
+
+}
+
+input:checked + .slider{
+
+    background:var(--primary);
+
+}
+
+input:checked + .slider::before{
+
+    transform:translateX(26px);
+
+}
+
+/* =====================
+   MAIN LAYOUT
+   ===================== */
+
+.container{
+
+    display:grid;
+
+    grid-template-columns:1.2fr 1fr;
+
+    min-height:100vh;
+
+}
+
+/* =====================
+   HERO SECTION
+   ===================== */
+
+.hero-section{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero-image{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(15,23,42,.82),
+    rgba(37,99,235,.55));
+
+    z-index:1;
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    height:100%;
+
+    padding:60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    color:white;
+
+    margin-bottom:40px;
+
+}
+
+.logo i{
+
+    font-size:38px;
+
+}
+
+.logo h1{
+
+    font-size:2rem;
+
+}
+
+.logo p{
+
+    opacity:.85;
+
+}
+
+/* =====================
+   HERO TEXT
+   ===================== */
+
+.hero-text h2{
+
+    color:white;
+
+    font-size:3rem;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+    color:white;
+
+    opacity:.9;
+
+    max-width:600px;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+/* =====================
+   STATS
+   ===================== */
+
+.stats{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:35px;
+
+}
+
+.stat-card{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(10px);
+
+    padding:18px 25px;
+
+    border-radius:16px;
+
+    color:white;
+
+}
+
+.stat-card h3{
+
+    font-size:1.5rem;
+
+}
+
+/* =====================
+   FEATURES
+   ===================== */
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+.feature{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:white;
+
+}
+
+.feature i{
+
+    color:#10b981;
+
+}
+
+/* =====================
+   LOGIN SECTION
+   ===================== */
+
+.login-section{
+
+    flex: 1;
+    display: flex;
+    align-items: center;        /* ← vertical center */
+    justify-content: center;    /* ← horizontal center */
+    overflow-y: auto;           /* ← allow scroll if needed */
+    padding: 20px;
+
+}
+
+.login-card{
+
+    width:100%;
+
+    max-width:500px;
+
+    background:var(--card-bg);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    box-shadow:var(--shadow);
+
+    padding:40px;
+
+}
+
+.card-header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.card-header h2{
+
+    font-size:2rem;
+
+    margin-bottom:8px;
+
+}
+
+.card-header p{
+
+    color:var(--text-light);
+
+}
+
+/* =====================
+   INPUTS
+   ===================== */
+
+.input-group{
+
+    margin-bottom:20px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+}
+
+.input-wrapper{
+
+    position:relative;
+
+}
+
+.input-wrapper i:first-child{
+
+    position:absolute;
+
+    left:15px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:var(--text-light);
+
+}
+
+.input-wrapper input{
+
+    width:100%;
+
+    padding:15px 50px 15px 45px;
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    background:transparent;
+
+    color:var(--text);
+
+    font-size:15px;
+
+}
+
+.input-wrapper input:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+}
+
+.eye-btn{
+
+    position:absolute;
+
+    right:15px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    color:var(--text-light);
+
+}
+
+/* =====================
+   OPTIONS
+   ===================== */
+
+.options-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.options-row a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+}
+
+.remember{
+
+    display:flex;
+    gap:8px;
+
+    align-items:center;
+
+}
+
+/* =====================
+   ROLE CARDS
+   ===================== */
+
+.role-section{
+
+    margin-bottom:25px;
+
+}
+
+.role-section h4{
+
+    margin-bottom:12px;
+
+}
+
+.roles{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.role-card{
+
+    flex:1;
+
+    text-align:center;
+
+    padding:18px 10px;
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.role-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.role-card.active{
+
+    background:var(--primary);
+
+    color:white;
+
+    border-color:var(--primary);
+
+}
+
+.role-card i{
+
+    display:block;
+
+    font-size:22px;
+
+    margin-bottom:8px;
+
+}
+
+/* =====================
+   BUTTONS
+   ===================== */
+
+.login-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:var(--primary-dark);
+
+}
+
+.divider{
+
+    text-align:center;
+
+    margin:25px 0;
+
+    color:var(--text-light);
+
+}
+
+.social-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.social-btn{
+
+    flex:1;
+
+    padding:14px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    background:transparent;
+
+    cursor:pointer;
+
+    color:var(--text);
+
+}
+
+.signup-link{
+
+    text-align:center;
+
+    margin-top:25px;
+
+}
+
+.signup-link a{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+/* =====================
+   MOBILE
+   ===================== */
+
+@media(max-width:992px){
+
+    .container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .hero-section{
+
+        min-height:450px;
+
+    }
+
+    .hero-text h2{
+
+        font-size:2.2rem;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .hero-content{
+
+        padding:30px;
+
+    }
+
+    .login-card{
+
+        padding:25px;
+
+    }
+
+    .roles{
+
+        flex-direction:column;
+
+    }
+
+    .social-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .theme-switch{
+
+        top:10px;
+        right:10px;
+
+        padding:10px 14px;
+    }
+
+}

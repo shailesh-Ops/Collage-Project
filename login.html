@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroMarket - Login</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="AeroMarket/assets/css/login.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Theme Toggle -->
+    <div class="theme-switch">
+        <span id="themeLabel">🌙 Dark Mode</span>
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div class="container">
+
+        <!-- LEFT SIDE -->
+        <div class="hero-section">
+
+            <div class="overlay"></div>
+
+            <img src="AeroMarket/assets/images/gulfstream-g500.jpg"
+                alt="Gulfstream G500"
+                class="hero-image">
+
+            <div class="hero-content">
+
+                <div class="logo">
+                    <i class="fa-solid fa-plane"></i>
+                    <div>
+                        <h1>AeroMarket</h1>
+                        <p>Aircraft Buying & Selling Platform</p>
+                    </div>
+                </div>
+
+                <div class="hero-text">
+                    <h2>Buy. Sell. Discover Aircraft.</h2>
+
+                    <p>
+                        Connecting buyers and sellers through
+                        a trusted global aviation marketplace.
+                    </p>
+                </div>
+
+                <div class="stats">
+
+                    <div class="stat-card">
+                        <h3>12,000+</h3>
+                        <span>Aircraft Listed</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>75+</h3>
+                        <span>Countries</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>2,500+</h3>
+                        <span>Verified Sellers</span>
+                    </div>
+
+                </div>
+
+                <div class="features">
+
+                    <div class="feature">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Secure Transactions</span>
+                    </div>
+
+                    <div class="feature">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <span>Global Reach</span>
+                    </div>
+
+                    <div class="feature">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span>Verified Listings</span>
+                    </div>
+
+                    <div class="feature">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>24/7 Support</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="login-section">
+
+            <div class="login-card">
+
+                <div class="card-header">
+
+                    <h2>Welcome Back</h2>
+
+                    <p>
+                        Sign in to your AeroMarket account
+                    </p>
+
+                </div>
+
+                <form id="loginForm">
+
+                    <!-- Email -->
+                    <div class="input-group">
+
+                        <label>Email Address</label>
+
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Password -->
+                    <div class="input-group">
+
+                        <label>Password</label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                                required>
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="eye-btn">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Remember -->
+                    <div class="options-row">
+
+                        <label class="remember">
+
+                            <input type="checkbox">
+
+                            Remember Me
+
+                        </label>
+
+                        <a href="#">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+                    <!-- Roles -->
+                    <div class="role-section">
+
+                        <h4>Login As</h4>
+
+                        <div class="roles">
+
+                            <div class="role-card active">
+                                <i class="fa-regular fa-user"></i>
+                                <span>Buyer</span>
+                            </div>
+
+                            <div class="role-card">
+                                <i class="fa-solid fa-user-tie"></i>
+                                <span>Seller</span>
+                            </div>
+
+                            <div class="role-card">
+                                <i class="fa-solid fa-user-shield"></i>
+                                <span>Admin</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Login Button -->
+                    <button
+                        type="submit"
+                        class="login-btn">
+
+                        Sign In
+
+                    </button>
+
+                    <!-- Divider -->
+                    <div class="divider">
+
+                        <span>or continue with</span>
+
+                    </div>
+
+                    <!-- Social Login -->
+                    <div class="social-buttons">
+
+                        <button
+                            type="button"
+                            class="social-btn">
+
+                            <i class="fa-brands fa-google"></i>
+
+                            Google
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="social-btn">
+
+                            <i class="fa-brands fa-microsoft"></i>
+
+                            Microsoft
+
+                        </button>
+
+                    </div>
+
+                    <!-- Signup -->
+                    <div class="signup-link">
+
+                        Don't have an account?
+
+                        <a href="#">
+                            Sign Up
+                        </a>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="AeroMarket/assets/js/login.js"></script>
+
+</body>
+</html>
