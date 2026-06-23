@@ -406,6 +406,39 @@ body{
 }
 
 /* =====================
+   VIDEO SHOWCASE
+===================== */
+
+.video-showcase{
+    padding:100px 7%;
+    background:#f4f6f9;
+    text-align:center;
+}
+
+.video-heading h2{
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.video-heading p{
+    color:#666;
+    margin-bottom:40px;
+}
+
+.video-container{
+    max-width:1200px;
+    margin:auto;
+    overflow:hidden;
+    border-radius:25px;
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
+.video-container video{
+    width:100%;
+    display:block;
+}
+
+/* =====================
    FOOTER
 ===================== */
 
