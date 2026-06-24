@@ -45,6 +45,10 @@ body{
     transition:.3s;
 }
 
+.nav-btn:hover{
+    transform:translateY(-3px);
+}
+
 .logo{
     display:flex;
     align-items:center;
