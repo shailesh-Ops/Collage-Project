@@ -29,20 +29,20 @@ body{
    NAVBAR
 ===================== */
 
-.navbar{
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:1000;
+.nav-btn{
+    background:linear-gradient(
+        135deg,
+        #0d6efd,
+        #3b82f6
+    );
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    color:white;
+    padding:14px 30px;
+    border-radius:12px;
 
-    padding:18px 7%;
+    text-decoration:none;
 
-    background:rgba(7,17,31,.92);
-    backdrop-filter:blur(12px);
+    transition:.3s;
 }
 
 .logo{
