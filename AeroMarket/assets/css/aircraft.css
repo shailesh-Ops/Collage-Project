@@ -1,3 +1,7 @@
+/* ===================================
+   GLOBAL
+=================================== */
+
 *{
     margin:0;
     padding:0;
@@ -6,23 +10,31 @@
 
 body{
     font-family:'Poppins',sans-serif;
+    background:#f5f7fa;
+    color:#1f2937;
+    overflow-x:hidden;
 }
+
+/* ===================================
+   NAVBAR
+=================================== */
 
 .navbar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    
-    padding: 20px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
 
-    background: #07111f;
+    padding:20px 7%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#07111f;
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
 }
-
 
 .logo{
     display:flex;
@@ -38,6 +50,10 @@ body{
     border-radius:50%;
 }
 
+.logo h2{
+    font-size:1.8rem;
+}
+
 .nav-links{
     display:flex;
     gap:30px;
@@ -47,26 +63,34 @@ body{
 .nav-links a{
     color:white;
     text-decoration:none;
+    transition:.3s;
 }
 
-.hero-aircraft{
-    margin-top: 90px;
+.nav-links a:hover{
+    color:#0d6efd;
 }
 
+/* ===================================
+   HERO SECTION
+=================================== */
 
 .hero-aircraft{
+    margin-top:90px;
+
     height:60vh;
 
     display:flex;
     justify-content:center;
     align-items:center;
-    text-align:center;
 
-    color:white; 
+    text-align:center;
+    color:white;
 
     background:
-    linear-gradient(rgba(0,0,0,.6),
-    rgba(0,0,0,.6)),
+    linear-gradient(
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.6)
+    ),
     url('../images/main-image-GulfStream-Air-Plan.jpg');
 
     background-size:cover;
@@ -75,7 +99,16 @@ body{
 
 .hero-content h1{
     font-size:4rem;
+    margin-bottom:15px;
 }
+
+.hero-content p{
+    font-size:1.2rem;
+}
+
+/* ===================================
+   FEATURED AIRCRAFT
+=================================== */
 
 .featured{
     padding:100px 7%;
@@ -86,44 +119,141 @@ body{
     margin-bottom:50px;
 }
 
+.section-title h2{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#666;
+}
+
+/* ===================================
+   SEARCH BAR
+=================================== */
+
+.search-box{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+
+    margin-bottom:50px;
+}
+
+.search-box input,
+.search-box select{
+
+    padding:14px;
+
+    border:1px solid #ddd;
+    border-radius:10px;
+
+    min-width:220px;
+
+    outline:none;
+}
+
+.search-box button{
+
+    padding:14px 25px;
+
+    background:#0d6efd;
+    color:white;
+
+    border:none;
+    border-radius:10px;
+
+    cursor:pointer;
+}
+
+.search-box button:hover{
+    background:#0b5ed7;
+}
+
+/* ===================================
+   AIRCRAFT GRID
+=================================== */
+
 .aircraft-grid{
+
     display:grid;
+
     grid-template-columns:
     repeat(auto-fit,minmax(320px,1fr));
 
     gap:30px;
 }
 
+/* ===================================
+   AIRCRAFT CARD
+=================================== */
+
 .aircraft-card{
+
     background:white;
+
     border-radius:20px;
+
     overflow:hidden;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    display:flex;
+    flex-direction:column;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.12);
+
+    transition:.3s;
+}
+
+.aircraft-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.18);
 }
 
 .aircraft-card img{
+
     width:100%;
     height:250px;
+
     object-fit:cover;
     display:block;
 }
 
 .card-content{
+
     padding:25px;
+
+    display:flex;
+    flex-direction:column;
+
+    flex-grow:1;
 }
 
 .card-content h3{
+
     margin-bottom:15px;
+    font-size:1.7rem;
 }
 
 .card-content p{
+
     margin-bottom:10px;
     color:#555;
+    font-size:1rem;
 }
 
+/* ===================================
+   BUTTON
+=================================== */
+
 .details-btn{
+
     display:block;
+
     text-align:center;
     text-decoration:none;
 
@@ -131,12 +261,85 @@ body{
     color:white;
 
     padding:14px;
+
     border-radius:10px;
-    margin-top:15px;
+
+    margin-top:auto;
 
     transition:.3s;
 }
 
 .details-btn:hover{
     background:#0b5ed7;
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer{
+
+    background:#07111f;
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+    margin-top:80px;
+}
+
+footer p{
+    opacity:.8;
+}
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media(max-width:992px){
+
+    .hero-content h1{
+        font-size:3rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:2.3rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .featured{
+        padding:70px 20px;
+    }
+
+    .aircraft-grid{
+        grid-template-columns:1fr;
+    }
+
+    .search-box{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .search-box input,
+    .search-box select{
+        width:100%;
+        max-width:350px;
+    }
 }
