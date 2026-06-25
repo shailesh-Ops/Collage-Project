@@ -5,245 +5,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroMarket | Aircraft</title>
 
-```
-<title>AeroMarket | Aircraft Marketplace</title>
+    <link rel="stylesheet" href="AeroMarket/assets/css/aircraft.css">
 
-<link rel="stylesheet" href="AeroMarket/assets/css/aircraft.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-<link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-```
-
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-```
-<!-- =====================
-     NAVBAR
-====================== -->
 
-<nav class="navbar">
+    <nav class="navbar">
 
-    <div class="logo">
+        <div class="logo">
+            <img src="AeroMarket/assets/LOGO/logo.jpg" alt="logo">
 
-        <img src="AeroMarket/assets/images/logo.png"
-             alt="AeroMarket Logo">
-
-        <div>
-            <h2>AeroMarket</h2>
-            <span>Aircraft Platform</span>
+            <div>
+                <h2>AeroMarket</h2>
+                <span>Aircraft Platform</span>
+            </div>
         </div>
 
-    </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aircraft.html">Aircraft</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
 
-    <ul class="nav-links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="#">Aircraft</a></li>
-        <li><a href="#">Categories</a></li>
-        <li><a href="#">Partners</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+    </nav>
 
-    <a href="login.html" class="nav-btn">
-        Login
-    </a>
+    <section class="hero-aircraft">
 
-</nav>
+        <div class="hero-content">
 
-<!-- =====================
-     PAGE HERO
-====================== -->
+            <h1>Aircraft Marketplace</h1>
 
-<section class="page-hero">
+            <p>
+                Explore premium aircraft listings from
+                trusted aviation partners worldwide.
+            </p>
 
-    <div class="hero-content">
+        </div>
 
-        <h1>
-            Aircraft Marketplace
-        </h1>
+    </section>
 
-        <p>
-            Discover private jets, helicopters,
-            business aircraft and commercial aviation
-            solutions from verified sellers worldwide.
-        </p>
+    <section class="featured">
 
-    </div>
+        <div class="section-title">
 
-</section>
+            <h2>Available Aircraft</h2>
 
-<!-- =====================
-     SEARCH FILTERS
-====================== -->
+            <p>
+                Browse our latest aircraft listings
+            </p>
 
-<section class="search-filters">
+        </div>
 
-    <h2>Find Your Perfect Aircraft</h2>
+        <div class="aircraft-grid">
 
-    <div class="filter-box">
+            <div class="aircraft-card">
 
-        <select>
-            <option>Manufacturer</option>
-            <option>Gulfstream</option>
-            <option>Bombardier</option>
-            <option>Dassault</option>
-        </select>
+                <img src="AeroMarket/assets/images/Gulfstream G700.jpg">
 
-        <select>
-            <option>Category</option>
-            <option>Private Jet</option>
-            <option>Business Jet</option>
-            <option>Helicopter</option>
-        </select>
+                <div class="card-content">
 
-        <select>
-            <option>Year</option>
-            <option>2025</option>
-            <option>2024</option>
-            <option>2023</option>
-        </select>
+                    <h3>Gulfstream G700</h3>
 
-        <button>
-            Search Aircraft
-        </button>
+                    <p>Range: 7,750 nm</p>
+                    <p>Passengers: 19</p>
+                    <p>Price: $78M</p>
 
-    </div>
+                    
+                </div>
 
-</section>
+            </div>
 
-<!-- =====================
-     AIRCRAFT LISTINGS
-====================== -->
+            <div class="aircraft-card">
 
-<section class="aircraft-listings">
+                <img src="AeroMarket/assets/images/Global-8000.jpg">
 
-    <h2>Featured Aircraft Listings</h2>
+                <div class="card-content">
 
-    <div class="aircraft-grid">
+                    <h3>Bombardier Global 8000</h3>
 
-        <!-- Card 1 -->
+                    <p>Range: 8,000 nm</p>
+                    <p>Passengers: 19</p>
+                    <p>Price: $67M</p>
 
-        <div class="aircraft-card">
+                </div>
 
-            <img src="AeroMarket/assets/images/Gulfstream G700.jpg"
-                 alt="Gulfstream G700">
+            </div>
 
-            <div class="card-content">
+            <div class="aircraft-card">
 
-                <h3>Gulfstream G700</h3>
+                <img src="AeroMarket/assets/images/Falcon 10x.jpg">
 
-                <p>📅 Year: 2025</p>
+                <div class="card-content">
 
-                <p>👥 Passengers: 19</p>
+                    <h3>Dassault Falcon 10X</h3>
 
-                <p>✈ Range: 7,750 nm</p>
+                    <p>Range: 7,500 nm</p>
+                    <p>Passengers: 19</p>
+                    <p>Price: $63M</p>
 
-                <p>💰 Price: $78 Million</p>
-
-                <a href="aircraft-details.html"
-                   class="details-btn">
-
-                    View Details
-
-                </a>
+                </div>
 
             </div>
 
         </div>
 
-        <!-- Card 2 -->
+        <div class="aircraft-grid">
 
-        <div class="aircraft-card">
+            <div class="aircraft-card">
 
-            <img src="AeroMarket/assets/images/Global-8000.jpg"
-                 alt="Global 8000">
+                <img src="AeroMarket/assets/images/Gulfstream G700.jpg">
 
-            <div class="card-content">
+                <div class="card-content">
 
-                <h3>Bombardier Global 8000</h3>
+                    <h3>Gulfstream G700</h3>
 
-                <p>📅 Year: 2025</p>
+                    <p>Range: 7,750 nm</p>
+                    <p>Passengers: 19</p>
+                    <p>Price: $78M</p>
 
-                <p>👥 Passengers: 19</p>
-
-                <p>✈ Range: 8,000 nm</p>
-
-                <p>💰 Price: $81 Million</p>
-
-                <a href="aircraft-details.html"
-                   class="details-btn">
-
-                    View Details
-
-                </a>
+                    
+                </div>
 
             </div>
 
-        </div>
 
-        <!-- Card 3 -->
+            <div class="aircraft-grid">
 
-        <div class="aircraft-card">
+            <div class="aircraft-card">
 
-            <img src="AeroMarket/assets/images/Falcon 10x.jpg"
-                 alt="Falcon 10X">
+                <img src="AeroMarket/assets/images/Gulfstream G700.jpg">
 
-            <div class="card-content">
+                <div class="card-content">
 
-                <h3>Dassault Falcon 10X</h3>
+                    <h3>Gulfstream G700</h3>
 
-                <p>📅 Year: 2025</p>
+                    <p>Range: 7,750 nm</p>
+                    <p>Passengers: 19</p>
+                    <p>Price: $78M</p>
 
-                <p>👥 Passengers: 19</p>
-
-                <p>✈ Range: 7,500 nm</p>
-
-                <p>💰 Price: $75 Million</p>
-
-                <a href="aircraft-details.html"
-                   class="details-btn">
-
-                    View Details
-
-                </a>
+                    
+                </div>
 
             </div>
 
-        </div>
+            <div class="aircraft-grid">
 
-    </div>
+            <div class="aircraft-card">
 
-</section>
+                <img src="AeroMarket/assets/images/Gulfstream G700.jpg">
 
-<!-- =====================
-     FOOTER
-====================== -->
+                <div class="card-content">
 
-<footer>
+                    <h3>Gulfstream G700</h3>
 
-    <div class="footer-content">
+                    <p>Range: 7,750 nm</p>
+                    <p>Passengers: 19</p>
+                    <p>Price: $78M</p>
 
-        <h2>AeroMarket</h2>
+                    
+                </div>
 
-        <p>
-            Aircraft Buying & Selling Platform
-        </p>
+            </div>
 
-        <p>
-            © 2026 AeroMarket. All Rights Reserved.
-        </p>
+            <div class="aircraft-grid">
 
-    </div>
+            <div class="aircraft-card">
 
-</footer>
+                <img src="AeroMarket/assets/images/Gulfstream G700.jpg">
 
-<script src="AeroMarket/assets/js/aircraft.js"></script>
-```
+                <div class="card-content">
+
+                    <h3>Gulfstream G700</h3>
+
+                    <p>Range: 7,750 nm</p>
+                    <p>Passengers: 19</p>
+                    <p>Price: $78M</p>
+
+                    
+                </div>
+
+            </div>
+
+            <div class="aircraft-grid">
+
+            <div class="aircraft-card">
+
+                <img src="AeroMarket/assets/images/Gulfstream G700.jpg">
+
+                <div class="card-content">
+
+                    <h3>Gulfstream G700</h3>
+
+                    <p>Range: 7,750 nm</p>
+                    <p>Passengers: 19</p>
+                    <p>Price: $78M</p>
+
+                    
+                </div>
+
+            </div>
+
+            <div class="aircraft-grid">
+
+            <div class="aircraft-card">
+
+                <img src="AeroMarket/assets/images/Gulfstream G700.jpg">
+
+                <div class="card-content">
+
+                    <h3>Gulfstream G700</h3>
+
+                    <p>Range: 7,750 nm</p>
+                    <p>Passengers: 19</p>
+                    <p>Price: $78M</p>
+
+                    
+                </div>
+
+            </div>
+
+            <div class="aircraft-grid">
+
+            <div class="aircraft-card">
+
+                <img src="AeroMarket/assets/images/Gulfstream G700.jpg">
+
+                <div class="card-content">
+
+                    <h3>Gulfstream G700</h3>
+
+                    <p>Range: 7,750 nm</p>
+                    <p>Passengers: 19</p>
+                    <p>Price: $78M</p>
+
+                    
+                </div>
+
+            </div>
+
+            <div class="aircraft-grid">
+
+            <div class="aircraft-card">
+
+                <img src="AeroMarket/assets/images/Gulfstream G700.jpg">
+
+                <div class="card-content">
+
+                    <h3>Gulfstream G700</h3>
+
+                    <p>Range: 7,750 nm</p>
+                    <p>Passengers: 19</p>
+                    <p>Price: $78M</p>
+
+                    
+                </div>
+
+            </div>
+            
+    </section>
 
 </body>
+
 </html>
