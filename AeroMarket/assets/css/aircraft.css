@@ -118,8 +118,10 @@ body{
 }
 
 .card-content p{
-    margin-bottom:8px;
+    margin-bottom:10px;
+    color:#555;
 }
+
 .details-btn{
     display:block;
     text-align:center;
