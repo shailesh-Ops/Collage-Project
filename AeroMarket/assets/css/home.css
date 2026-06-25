@@ -314,6 +314,14 @@ section{
     cursor:pointer;
 }
 
+.details-btn{
+    background:#0d6efd;
+    color:white;
+    padding: 10px 100px;
+    border: none;
+    border-radius:10px;
+}
+
 /* =====================
    PARTNERS
 ===================== */
