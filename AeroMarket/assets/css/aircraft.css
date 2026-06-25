@@ -9,17 +9,20 @@ body{
 }
 
 .navbar{
-    position:fixed;
-    top:0;
-    width:100%;
-    padding:20px 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    background:#07111f;
+    background: #07111f;
 }
+
 
 .logo{
     display:flex;
@@ -46,6 +49,11 @@ body{
 }
 
 .hero-aircraft{
+    margin-top: 90px;
+}
+
+
+.hero-aircraft{
     height:60vh;
 
     display:flex;
@@ -53,7 +61,7 @@ body{
     align-items:center;
     text-align:center;
 
-    color:white;
+    color:white; 
 
     background:
     linear-gradient(rgba(0,0,0,.6),
