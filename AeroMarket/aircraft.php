@@ -1,3 +1,7 @@
+<?php
+// Aircraft Page
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -91,12 +95,9 @@
 
             <div class="aircraft-card">
 
-
                 <img src="AeroMarket/assets/images/Gulfstream G700.jpg">
 
                 <div class="card-content">
-
-                    <a href="aircraft-details.html" class="card-content"></a>
 
                     <h3>Gulfstream G700</h3>
 
@@ -143,7 +144,26 @@
 
         </div>
 
-        
+        <div class="aircraft-grid">
+
+            <div class="aircraft-card">
+
+                <img src="AeroMarket/assets/images/Gulfstream G700.jpg">
+
+                <div class="card-content">
+
+                    <h3>Gulfstream G700</h3>
+
+                    <p>Range: 7,750 nm</p>
+                    <p>Passengers: 19</p>
+                    <p>Price: $78M</p>
+
+                    
+                </div>
+
+            </div>
+
+
             <div class="aircraft-grid">
 
             <div class="aircraft-card">
