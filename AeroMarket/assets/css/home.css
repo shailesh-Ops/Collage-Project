@@ -516,6 +516,16 @@ section{
     object-fit:cover;
 }
 
+.Contect{
+
+    width: 100;
+    height: auto;
+    background-origin: padding-box;
+    box-shadow:0 25px 60px  #084298;
+
+}
+
+
 /* =====================
    FOOTER
 ===================== */
