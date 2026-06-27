@@ -322,6 +322,8 @@ body{
 
     margin-top:auto;
 
+    width: 100%;
+
     display:block;
 
     text-align:center;
@@ -345,5 +347,37 @@ body{
 .details-btn:hover{
 
     background:#084fc7;
+
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer{
+
+    background:#07111f;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    margin-top:80px;
+
+}
+
+.footer-content h2{
+
+    margin-bottom:10px;
+
+}
+
+.footer-content p{
+
+    margin:6px 0;
+
+    color:#cfd6df;
 
 }
