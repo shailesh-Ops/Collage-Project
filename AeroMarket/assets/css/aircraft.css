@@ -8,6 +8,10 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:'Poppins',sans-serif;
     background:#f5f7fa;
@@ -26,7 +30,7 @@ body{
     width:100%;
     z-index:1000;
 
-    padding:20px 7%;
+    padding:16px 7%;
 
     display:flex;
     justify-content:space-between;
@@ -76,7 +80,7 @@ body{
 
 .hero-aircraft{
     margin-top:90px;
-    height:60vh;
+    min-height:60vh;
 
     display:flex;
     justify-content:center;
