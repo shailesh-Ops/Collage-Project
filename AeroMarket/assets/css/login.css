@@ -751,3 +751,18 @@ input:checked + .slider::before{
     }
 
 }
+
+/* =====================
+   FOOTER
+===================== */
+
+footer{
+    background:#06101d;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+.footer-content h2{
+    margin-bottom:10px;
+}
