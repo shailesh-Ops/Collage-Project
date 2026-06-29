@@ -232,7 +232,7 @@ input:checked + .slider::before{
 
 }
 
-.logo{
+/* .logo{
 
     display:flex;
     align-items:center;
@@ -260,7 +260,33 @@ input:checked + .slider::before{
 
     opacity:.85;
 
+} */
+
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
 }
+
+.logo img{
+    width:55px;
+    height:55px;
+    object-fit:cover;
+}
+
+.logo h2{
+    color:white;
+    font-size:2rem;
+    margin:0;
+}
+
+.logo span{
+    color:#d1d5db;
+    font-size:.8rem;
+}
+
+
 
 /* =====================
    HERO TEXT
