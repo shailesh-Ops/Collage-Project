@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AeroMarket - Register</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="AeroMarket/assets/css/register.css">
+</head>
+
+<body>
+
+<!-- =========================
+      THEME SWITCH
+========================= -->
+
+<div class="theme-switch">
+
+    <span id="themeLabel">🌙 Dark Mode</span>
+
+    <label class="switch">
+
+        <input type="checkbox" id="themeToggle">
+
+        <span class="slider"></span>
+
+    </label>
+
+</div>
+
+<div class="container">
+
+    <!-- =========================
+            LEFT SIDE
+    ========================= -->
+
+    <div class="hero-section">
+
+        <div class="overlay"></div>
+
+        <img src="AeroMarket/assets/images/gulfstream-g500.jpg"
+             alt="Aircraft"
+             class="hero-image">
+
+        <div class="hero-content">
+
+            <div class="logo">
+
+                <img src="AeroMarket/assets/LOGO/logo.jpg"
+                     alt="Logo">
+
+                <div>
+
+                    <h1>AeroMarket</h1>
+
+                    <h5>Aircraft Buying & Selling Platform</h5>
+
+                </div>
+
+            </div>
+
+            <div class="hero-text">
+
+                <h2>Create Your Aviation Account</h2>
+
+                <p>
+
+                    Join thousands of buyers and sellers across the world.
+                    Start exploring premium aircraft today.
+
+                </p>
+
+            </div>
+
+            <div class="stats">
+
+                <div class="stat-card">
+
+                    <h3>12,000+</h3>
+
+                    <span>Aircraft Listed</span>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h3>75+</h3>
+
+                    <span>Countries</span>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h3>2,500+</h3>
+
+                    <span>Verified Sellers</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+            RIGHT SIDE
+    ========================= -->
+
+    <div class="register-section">
+
+        <div class="register-card">
+
+            <div class="card-header">
+
+                <h2>Create Account</h2>
+
+                <p>Register to access AeroMarket</p>
+
+            </div>
+
+            <form action="#" method="POST">
+
+                <!-- Full Name -->
+
+                <div class="input-group">
+
+                    <label>Full Name</label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-regular fa-user"></i>
+
+                        <input
+                            type="text"
+                            name="fullname"
+                            placeholder="Enter your full name"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <!-- Email -->
+
+                <div class="input-group">
+
+                    <label>Email Address</label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <!-- Phone -->
+
+                <div class="input-group">
+
+                    <label>Phone Number</label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="Enter phone number"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <!-- Password -->
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create password"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <!-- Confirm Password -->
+
+                <div class="input-group">
+
+                    <label>Confirm Password</label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirm_password"
+                            placeholder="Confirm password"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <!-- Role -->
+
+                <div class="role-section">
+
+                    <h4>Register As</h4>
+
+                    <div class="roles">
+
+                        <label class="role-card">
+
+                            <input type="radio"
+                                   name="role"
+                                   value="Buyer"
+                                   checked>
+
+                            <i class="fa-regular fa-user"></i>
+
+                            <span>Buyer</span>
+
+                        </label>
+
+                        <label class="role-card">
+
+                            <input type="radio"
+                                   name="role"
+                                   value="Seller">
+
+                            <i class="fa-solid fa-user-tie"></i>
+
+                            <span>Seller</span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- Button -->
+
+                <button
+                    type="submit"
+                    class="register-btn">
+
+                    Create Account
+
+                </button>
+
+                <div class="login-link">
+
+                    Already have an account?
+
+                    <a href="login.php">
+
+                        Login Here
+
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="AeroMarket/assets/js/register.js"></script>
+
+</body>
+</html>
