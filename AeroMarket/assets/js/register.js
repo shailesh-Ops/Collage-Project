@@ -139,13 +139,40 @@ phone.addEventListener("input", function () {
 // FULL NAME VALIDATION
 // ==============================
 
-const fullname = document.querySelector("input[name='fullname']");
+const fullName = document.getElementById("fullName");
+const nameError = document.getElementById("nameError");
 
-fullname.addEventListener("input", function () {
+fullName.addEventListener("input", function(){
 
-    this.value = this.value.replace(/[^a-zA-Z ]/g, "");
+    const regex = /^[A-Za-z ]+$/;
+
+    if(this.value === ""){
+
+        nameError.innerHTML="";
+
+    }
+    else if(!regex.test(this.value)){
+
+        nameError.innerHTML="Only alphabets are allowed.";
+
+    }
+    else{
+
+        nameError.innerHTML="";
+
+    }
 
 });
+
+
+
+// const fullname = document.querySelector("input[name='fullname']");
+
+// fullname.addEventListener("input", function () {
+
+//     this.value = this.value.replace(/[^a-zA-Z ]/g, "");
+
+// });
 
 
 // ==============================

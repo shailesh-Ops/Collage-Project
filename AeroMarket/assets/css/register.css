@@ -436,16 +436,8 @@ input:checked + .slider::before{
 }
 
 .error-message{
-
-    display: block;
-
-    margin-top: auto;
-
-    color: #dc3545;
-
-    font-size: 14px;
-
-    font-weight: 500;
-
-    min-height: 18px;
+    color:#dc3545;
+    font-size:13px;
+    display:block;
+    margin-top:5px;
 }

@@ -272,7 +272,7 @@ input:checked + .slider::before{
 .logo img{
     width:55px;
     height:55px;
-    object-fit:cover;
+    object-fit:contain;
 }
 
 .logo h2{

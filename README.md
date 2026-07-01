@@ -426,3 +426,35 @@ This is called code reusability, and it's something professors like to see.
 ✅ Role-based authentication
 ✅ Responsive design
 ✅ Clean project structure
+
+
+
+✅ Home Page
+
+✅ Aircraft Page
+
+✅ Login Page
+
+🔄 Register Page (Professional UI)
+
+⬜ PHP Registration
+
+⬜ MySQL Database
+
+⬜ Login System
+
+⬜ Buyer Dashboard
+
+⬜ Seller Dashboard
+
+⬜ Admin Dashboard
+
+⬜ Contact Page
+
+⬜ Forgot Password
+
+⬜ Logout
+
+⬜ Final Testing
+
+⬜ Viva Preparation
