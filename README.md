@@ -194,58 +194,143 @@ Project Status: 30% Complete
 
 
 # final project structure 
+🚀 AeroMarket Development Roadmap (Phase 2)
+✅ Phase 1 (Completed)
+✔ Login UI
+✔ Home Page
+✔ Aircraft Listing
+✔ Aircraft Details Pages
+✔ Responsive Design
+✔ Beautiful UI
+✔ PHP selected as backend language
+🟢 Phase 2 (Current)
+
+We'll now build the actual web application.
 
 AeroMarket/
 │
 ├── index.php
 ├── login.php
 ├── register.php
-├── contact.php
+├── home.php
 ├── aircraft.php
 ├── aircraft-details.php
-├── logout.php
+├── contact.php
+├── about.php
 │
 ├── buyer/
-│   ├── dashboard.php
-│   ├── profile.php
-│   ├── wishlist.php
-│   └── settings.php
+│      dashboard.php
+│      profile.php
+│      wishlist.php
+│      enquiries.php
 │
 ├── seller/
-│   ├── dashboard.php
-│   ├── add-aircraft.php
-│   ├── edit-aircraft.php
-│   ├── my-aircraft.php
-│   └── profile.php
+│      dashboard.php
+│      add-aircraft.php
+│      my-aircraft.php
+│      edit-aircraft.php
+│      enquiries.php
 │
 ├── admin/
-│   ├── dashboard.php
-│   ├── users.php
-│   ├── sellers.php
-│   ├── aircraft.php
-│   ├── reports.php
-│   └── settings.php
-│
-├── config/
-│   ├── database.php
-│   ├── auth.php
-│   └── session.php
+│      dashboard.php
+│      manage-users.php
+│      manage-aircraft.php
+│      manage-categories.php
+│      reports.php
 │
 ├── includes/
-│   ├── header.php
-│   ├── navbar.php
-│   ├── footer.php
-│   └── sidebar.php
+│      header.php
+│      navbar.php
+│      footer.php
+│      db.php
+│      auth.php
 │
-├── assets/
-│   ├── css/
-│   ├── js/
-│   ├── images/
-│   ├── LOGO/
-│   └── air-video/
+├── config/
+│      config.php
 │
-└── database/
-    └── aeromarket.sql
+├── database/
+│      aeromarket.sql
+│
+└── assets/
+
+This is much closer to how real PHP projects are organized.
+
+🟢 Phase 3
+
+Database
+
+MySQL
+
+Users
+Aircraft
+Categories
+Enquiries
+Contact Messages
+🟢 Phase 4
+
+Authentication
+
+Register
+
+↓
+
+Login
+
+↓
+
+Role Check
+
+↓
+
+Buyer Dashboard
+Seller Dashboard
+Admin Dashboard
+🟢 Phase 5
+
+Buyer Features
+
+Browse Aircraft
+Search
+Filter
+View Details
+Wishlist
+Send Enquiry
+Edit Profile
+🟢 Phase 6
+
+Seller Features
+
+Seller Login
+Seller Dashboard
+Add Aircraft
+Edit Aircraft
+Delete Aircraft
+Upload Images
+View Enquiries
+🟢 Phase 7
+
+Admin Features
+
+Dashboard
+Manage Users
+Manage Sellers
+Manage Buyers
+Manage Aircraft
+Manage Categories
+View Contact Messages
+Reports
+🟢 Phase 8
+
+Extra Features
+
+Session Login
+Logout
+Password Hashing
+Search
+Pagination
+Image Upload
+Responsive Dashboard
+Statistics Cards
 
 # create this one to day and add file one project 
     AeroMarket/
@@ -324,3 +409,20 @@ mysqli_connect(...)
 we'll write it once and reuse it everywhere.
 
 This is called code reusability, and it's something professors like to see.
+
+
+
+
+✅ Modern landing page
+✅ Aircraft marketplace
+✅ Aircraft details page
+✅ User registration
+✅ Secure login with PHP
+✅ Buyer dashboard
+✅ Seller dashboard
+✅ Admin dashboard
+✅ Contact page
+✅ MySQL database
+✅ Role-based authentication
+✅ Responsive design
+✅ Clean project structure

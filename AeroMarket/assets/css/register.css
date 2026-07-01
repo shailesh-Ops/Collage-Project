@@ -414,3 +414,23 @@ input:checked + .slider::before{
     }
 
 }
+
+/* ===================================
+   ERROR MESSAGE
+=================================== */
+
+.error-message{
+
+    display: block;
+
+    margin-top:8px;
+
+    color:#dc3545;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    min-height:18px;
+
+}
