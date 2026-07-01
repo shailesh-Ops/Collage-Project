@@ -154,15 +154,40 @@ fullname.addEventListener("input", function () {
 
 const email = document.querySelector("input[name='email']");
 
+// email.addEventListener("blur", function () {
+
+//     const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+//     if (!email.value.match(pattern)) {
+
+//         alert("Please enter a valid email address.");
+
+//         email.focus();
+
+//     }
+
+// });
+
+
 email.addEventListener("blur", function () {
 
-    const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!email.value.match(pattern)) {
+    if (email.value === "") {
 
-        alert("Please enter a valid email address.");
+        return;
 
-        email.focus();
+    }
+
+    if (!pattern.test(email.value)) {
+
+        email.style.border = "2px solid red";
+
+    }
+
+    else{
+
+        email.style.border = "2px solid green";
 
     }
 
