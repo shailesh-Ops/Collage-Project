@@ -434,3 +434,18 @@ input:checked + .slider::before{
     min-height:18px;
 
 }
+
+.error-message{
+
+    display: block;
+
+    margin-top: auto;
+
+    color: #dc3545;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    min-height: 18px;
+}

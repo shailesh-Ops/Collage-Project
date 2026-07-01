@@ -154,21 +154,6 @@ fullname.addEventListener("input", function () {
 
 const email = document.querySelector("input[name='email']");
 
-// email.addEventListener("blur", function () {
-
-//     const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-
-//     if (!email.value.match(pattern)) {
-
-//         alert("Please enter a valid email address.");
-
-//         email.focus();
-
-//     }
-
-// });
-
-
 email.addEventListener("blur", function () {
 
     const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -192,6 +177,7 @@ email.addEventListener("blur", function () {
     }
 
 });
+
 
 
 // ==============================
